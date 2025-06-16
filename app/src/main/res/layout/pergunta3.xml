@@ -2,10 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textoPrincipal"
@@ -41,24 +39,25 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
         android:fontFamily="monospace"
         android:shadowColor="#000000"
         android:shadowDx="30"
         android:shadowDy="10"
         android:shadowRadius="30"
-        android:text="Qual dos nomes abaixo é uma linguagem de programação?"
+        android:text="Qual dessas empresas tem uma linguagem de programação?"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#000000"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/containerBotoes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/containerBotoes"
-
-        app:layout_constraintTop_toBottomOf="@+id/progressBarLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/textoPrincipal" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/containerBotoes"
@@ -75,56 +74,56 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/Naja"
+            android:id="@+id/hostgator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#808080"
-            android:text="Naja"
+            android:text="HostGator"
             android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toStartOf="@+id/forza"
+            app:layout_constraintEnd_toStartOf="@+id/meta"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/forza"
+            android:id="@+id/meta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#808080"
-            android:text="Forza"
+            android:text="Meta"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/Naja"
+            app:layout_constraintStart_toEndOf="@+id/hostgator"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/jarvis"
+            android:id="@+id/nubank"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:backgroundTint="#808080"
-            android:text="Jarvis"
+            android:text="Nubank"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/ruby"
+            app:layout_constraintEnd_toStartOf="@+id/tesla"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Naja" />
+            app:layout_constraintTop_toBottomOf="@+id/hostgator" />
 
         <Button
-            android:id="@+id/ruby"
+            android:id="@+id/tesla"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:backgroundTint="#808080"
-            android:text="Ruby"
+            android:text="Tesla"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/jarvis"
-            app:layout_constraintTop_toBottomOf="@+id/forza" />
+            app:layout_constraintStart_toEndOf="@+id/nubank"
+            app:layout_constraintTop_toBottomOf="@+id/meta" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
