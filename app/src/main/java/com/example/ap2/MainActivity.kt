@@ -3,17 +3,12 @@ package com.example.ap2
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val progressBar = findViewById<ProgressBar>(R.id.progressBar)
-        progressBar.max = 3
-        progressBar.progress = 1
 
         var total = 0
         val totalPontos = "total pontos"

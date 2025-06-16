@@ -20,6 +20,12 @@ class pergunta3 : AppCompatActivity() {
         val pontuacaoRecebida = intent.getIntExtra(totalPontos, 0)
         var totalpergunta3 = pontuacaoRecebida
 
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container_dica, DicaFragment())
+                .commit()
+        }
+
         btnMeta.setOnClickListener {
             val intent = Intent(this, total::class.java)
             intent.putExtra(totalPontos, totalpergunta3)
